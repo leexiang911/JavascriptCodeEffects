@@ -1,0 +1,45 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+.container {
+    background-color: aqua;
+    overflow: hidden;
+    /* 主要是产生bfc清除浮动 */
+    padding: 20px 0;
+}
+
+/* 清除浮动 */
+/* .container::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.tilte {
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 50px;
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
+
+}
+
+.list {
+    float: left;
+    list-style: none;
+    padding: 0;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.list li {
+    height: 30px;
+    line-height: 30px;
+    /* 文字居中 */
+}
